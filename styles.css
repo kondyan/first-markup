@@ -1,0 +1,73 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f4266;
+  --color-grey: #2e2f42b3;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-slate);
+}
+
+.logo {
+  color: var(--color-iris);
+}
+
+.footer .logo-span {
+  color: var(--color-cloud);
+}
+
+.logo-span {
+  color: var(--color-navy-blue);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.hero {
+  background-color: var(--color-navy-blue);
+}
+
+.hero-title {
+  color: var(--color-white);
+}
+
+.button-order {
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  cursor: pointer;
+}
+
+.header-two {
+  color: var(--color-navy-blue);
+}
+
+.header-three {
+  color: var(--color-navy-blue);
+}
+
+.team {
+  background-color: var(--color-cloud);
+}
+
+.footer-text {
+  color: var(--color-cloud);
+}
+
+.footer {
+  background-color: var(--color-navy-blue);
+}
