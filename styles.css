@@ -16,10 +16,17 @@
 body {
   background-color: var(--color-white);
   color: var(--color-slate);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
 }
 
 .logo {
   color: var(--color-iris);
+  font-family: "Raleway", sans-serif;
 }
 
 .footer .logo-span {
@@ -32,6 +39,7 @@ body {
 
 .list {
   list-style: none;
+  font-style: normal;
 }
 
 .link {
@@ -44,20 +52,44 @@ body {
 
 .hero-title {
   color: var(--color-white);
+  font-size: 56px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
 }
 
 .button-order {
   color: var(--color-white);
   background-color: var(--color-iris);
   cursor: pointer;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
 }
 
 .header-two {
-  color: var(--color-navy-blue);
+  font-size: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 }
 
 .header-three {
   color: var(--color-navy-blue);
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
 }
 
 .team {
@@ -70,4 +102,29 @@ body {
 
 .footer {
   background-color: var(--color-navy-blue);
+}
+
+.button-text {
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.portfolio-nav {
+  list-style: none;
+}
+
+.portfolio-list-button {
+  cursor: pointer;
+  color: var(--color-ocean);
+  background-color: var(--color-cloud);
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
 }
