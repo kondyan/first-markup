@@ -119,7 +119,7 @@ body {
 
 .portfolio-list-button {
   cursor: pointer;
-  color: var(--color-ocean);
+  color: var(--color-iris);
   background-color: var(--color-cloud);
   font-size: 16px;
   font-family: Roboto;
@@ -130,5 +130,13 @@ body {
 }
 
 .portfolio-list-item-text {
+  color: var(--color-slate);
+}
+
+.nav-list-item-link {
+  color: var(--color-navy-blue);
+}
+
+.contact-link {
   color: var(--color-slate);
 }
