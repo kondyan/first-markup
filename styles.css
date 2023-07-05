@@ -31,8 +31,18 @@ body {
   color: var(--color-navy-blue);
 }
 
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
+  color: var(--color-ocean);
+}
+
 .contact-link {
   color: var(--color-slate);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--color-ocean);
 }
 
 /* logo */
@@ -103,6 +113,11 @@ body {
   letter-spacing: 0.64px;
 }
 
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--color-ocean);
+}
+
 .button-text {
   font-size: 16px;
   font-family: Roboto;
@@ -155,6 +170,12 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+}
+
+.portfolio-list-button:hover,
+.portfolio-list-button:focus {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
 }
 
 .portfolio-list-item-text {
