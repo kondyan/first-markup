@@ -21,7 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
@@ -154,10 +154,6 @@ body {
   background-color: var(--color-cloud);
 }
 
-.team-list-img {
-  width: 264px;
-}
-
 /* portfolio elements */
 
 .portfolio-nav {
@@ -184,9 +180,4 @@ body {
 
 .portfolio-list-item-text {
   color: var(--color-slate);
-}
-
-.portfolio-list-img,
-.doing-list-img {
-  width: 360px;
 }
