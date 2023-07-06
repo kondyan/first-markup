@@ -154,6 +154,10 @@ body {
   background-color: var(--color-cloud);
 }
 
+.team-list-img {
+  width: 264px;
+}
+
 /* portfolio elements */
 
 .portfolio-nav {
@@ -180,4 +184,9 @@ body {
 
 .portfolio-list-item-text {
   color: var(--color-slate);
+}
+
+.portfolio-list-img,
+.doing-list-img {
+  width: 360px;
 }
