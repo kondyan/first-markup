@@ -26,6 +26,15 @@ body {
   letter-spacing: 0.32px;
 }
 
+/* container */
+.container {
+  width: 1440px;
+  padding: 0 156px;
+  margin: 0 auto;
+
+  outline: 2px dotted tomato;
+}
+
 /* header */
 .nav-list-item-link {
   color: var(--color-navy-blue);
