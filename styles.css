@@ -13,8 +13,10 @@
   --color-dairy: #fcfcfc;
 }
 
-ul {
+ul,
+p {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -147,26 +149,6 @@ body {
   text-decoration: none;
 }
 
-/* hero */
-
-.hero {
-  background-color: var(--color-navy-blue);
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
-
-.hero-title {
-  color: var(--color-white);
-  font-size: 56px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 1.12px;
-  width: 496px;
-  margin: 0 auto;
-}
-
 /* buttons */
 
 .button-order {
@@ -175,12 +157,11 @@ body {
   background-color: var(--color-iris);
   cursor: pointer;
   font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
 
+  border: 0;
+  width: 169px;
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -212,6 +193,7 @@ body {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.72px;
+  margin-top: 0;
 }
 
 .header-three {
@@ -222,6 +204,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin: 0;
 }
 
 /* studio elements */
@@ -229,6 +212,103 @@ body {
 .team {
   background-color: var(--color-cloud);
 }
+
+/* hero */
+
+.hero {
+  background-color: var(--color-navy-blue);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.hero-title {
+  color: var(--color-white);
+  font-size: 56px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 1.12px;
+  width: 496px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* advantages */
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-item {
+  width: 264px;
+}
+
+.advantages-list-title {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.advantages-list-text {
+  letter-spacing: 0.32px;
+}
+
+/* doing-list */
+
+.doing-list {
+  display: flex;
+  gap: 24px;
+}
+
+.doing-list-item {
+  width: 360px;
+}
+
+.doing-title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* team elements */
+
+.team-title {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team-list-item {
+  width: 264px;
+  padding-bottom: 32px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list-name {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.team-list-job {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* footer elements */
 
 /* portfolio elements */
 
