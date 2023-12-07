@@ -354,15 +354,17 @@ body {
 
 .portfolio-list-item-text {
   color: var(--color-slate);
-  padding-bottom: 32px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .portfolio-list-item {
-  width: 360px;
-  display: inline-flex;
+  background: var(--WHITE, #fff);
+  padding-bottom: 32px;
 }
 
 .portfolio-list-item .header-three {
@@ -371,4 +373,5 @@ body {
 
 .portfolio-list-img {
   margin-bottom: 32px;
+  width: 360px;
 }
