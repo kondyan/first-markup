@@ -61,7 +61,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-order">Order service</button>
+          <button  data-modal-open type="button" class="button-order">Order service</button>
         </div>
       </section>
       <section class="advantages">
@@ -126,7 +126,7 @@
             <li class="doing-list-item">
               <img
                 class="doing-list-img"
-                src="./img/phone1.jpg"
+                src="./img/phone2.jpg"
                 alt="phone"
                 width="360"
               />
@@ -134,7 +134,7 @@
             <li class="doing-list-item">
               <img
                 class="doing-list-img"
-                src="./img/phone2.jpg"
+                src="./img/phone1.jpg"
                 alt="phone"
                 width="360"
               />
@@ -630,5 +630,14 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="data-modal-close">
+         
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js">
+    </script>
   </body>
 </html>

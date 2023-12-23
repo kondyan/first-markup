@@ -32,9 +32,9 @@ img {
 /* body */
 
 body {
-  padding-top: 72.05px;
   background-color: var(--color-white);
   color: var(--color-slate);
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -55,11 +55,6 @@ body {
 /* header */
 
 .header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-cornflower);
 }
@@ -160,6 +155,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  text-transform: capitalize;
 
   border: 0;
   width: 169px;
@@ -217,27 +213,35 @@ body {
 /* hero */
 
 .hero {
-  background-color: var(--color-grey);
-  background-image: linear-gradient(var(--color-grey), var(--color-grey)),
-    url("./img/people-office-1.jpg");
+  max-width: 1440px;
+
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+
+  background-image: linear-gradient( rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url("./img/people-office-1.jpg");
 }
 
 .hero-title {
-  color: var(--color-white);
+  width: 496px;
+  margin: 0 auto;
+
+  text-align: center;
+  
   font-size: 56px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 1.12px;
-  width: 496px;
-  margin: 0 auto;
-  text-align: center;
+
+  color: var(--color-white);
 }
 
 /* advantages */
@@ -293,6 +297,8 @@ body {
 }
 
 .doing-title {
+padding-bottom: 72px;
+
   text-transform: capitalize;
   text-align: center;
 }
@@ -516,4 +522,34 @@ body {
   border: 1px solid var(--color-cornflower);
   border-top: 0;
   padding: 32px 16px;
+}
+
+/* backdrop/overlay */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 584px;
+  width: 408px;
+
+  background-color: var(--color-white);
 }
