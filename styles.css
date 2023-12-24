@@ -93,6 +93,10 @@ body {
   text-transform: capitalize;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item-link:hover,
@@ -105,6 +109,10 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -165,6 +173,10 @@ body {
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-order:hover,
@@ -358,6 +370,11 @@ padding-bottom: 72px;
   border-radius: 50%;
 
   background-color: var(--color-iris);
+
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item-link:hover,
@@ -398,13 +415,18 @@ padding-bottom: 72px;
   width: 168px;
   height: 88px;
   border-radius: 4px;
-  border: 1px solid var(--color-light-slate);
+  color: var(--color-light-slate);
+  --color1: currentColor;
+  border: 1px solid currentColor;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-companies-link:hover,
 .customers-companies-link:focus {
-  border-color: var(--color-ocean);
-  --color1: var(--color-ocean);
+  color: var(--color-ocean);
 }
 
 .customers-companies-svg {
@@ -462,12 +484,18 @@ padding-bottom: 72px;
 
 /* portfolio elements */
 
+.portfolio-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
 .portfolio-nav {
   list-style: none;
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 72px;
 }
 
 .portfolio-list-button {
@@ -484,8 +512,12 @@ padding-bottom: 72px;
 
   padding: 12px 24px;
   border-radius: 4px;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  
+
+  /* no idea how to do this another way ;( */
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-button:hover,
@@ -506,7 +538,12 @@ padding-bottom: 72px;
 
 .portfolio-list-item {
   background: var(--color-white);
-  padding-bottom: 32px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-item .header-three {
@@ -514,7 +551,7 @@ padding-bottom: 72px;
 }
 
 .portfolio-list-img {
-  width: 360px;
+ max-width: 360px;
 }
 
 .portfolio-list-item-wraper {
@@ -523,6 +560,30 @@ padding-bottom: 72px;
   border-top: 0;
   padding: 32px 16px;
 }
+
+.portfolio-item-wraper {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.portfolio-item-movie {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  letter-spacing: 0.32px;
+  color: var(--color-cloud);
+  background-color: rgba(77, 90, 229, 0.8);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portfolio-list-item-link:hover .portfolio-item-movie,
+  .portfolio-list-item-link:focus .portfolio-item-movie {
+   transform: translateY(-100%);
+  }
 
 /* backdrop/overlay */
 
@@ -574,6 +635,10 @@ padding-bottom: 72px;
   border-radius: 50%;
   background-color: var(--color-cornflower);
   cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
