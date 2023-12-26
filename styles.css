@@ -104,6 +104,27 @@ body {
   color: var(--color-ocean);
 }
 
+.active {
+  position: relative;
+}
+
+.active::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  content: '';
+  display: block;
+  
+
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+
+
+  background-color: var(--color-ocean);
+}
+
 .contact-link {
   color: var(--color-slate);
   display: block;
@@ -515,7 +536,7 @@ padding-bottom: 72px;
   
 
   /* no idea how to do this another way ;( */
-  transition-property: color, background-color;
+  transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -524,6 +545,8 @@ padding-bottom: 72px;
 .portfolio-list-button:focus {
   color: var(--color-white);
   background-color: var(--color-ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 
 .portfolio-list-item-text {
@@ -596,6 +619,10 @@ padding-bottom: 72px;
   height: 100%;
 
   background-color: rgba(46, 47, 66, 0.4);
+
+  transition-property: opacity;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -616,7 +643,15 @@ padding-bottom: 72px;
   background-color: var(--color-dairy);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+.backdrop.is-hidden .modal {
+  transform: rotate(180deg)
+} 
 
 .modal-button {
   display: flex;
