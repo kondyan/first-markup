@@ -48,8 +48,6 @@ body {
   width: 1440px;
   padding: 0 156px;
   margin: 0 auto;
-
-  /* outline: 2px dotted tomato; */
 }
 
 /* header */
@@ -72,10 +70,6 @@ body {
   display: flex;
   gap: 40px;
 }
-
-/* .nav-list-item:not(:last-child) {
-  margin-right: 40px;
-} */
 
 .header-address {
   margin-left: auto;
