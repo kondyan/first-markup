@@ -641,6 +641,40 @@
           />
          </svg>
         </button>
+        <h2 class="modal-text">Leave your contacts and we will call you back</h2>
+
+        <form class="form-modal">
+<ul class="form-modal-list list">
+          <li class="form-modal-element">
+          <label class="form-modal-name-label for='modal-name">Name</label>
+        <input class="form-modal-name-input" type="text" name="name" id="modal-name">
+      </li>
+
+      <li class="form-modal-element">
+          <label class="form-modal-tel-label" for="modal-tel">Phone</label>
+          <input class="form-modal-tel-input" type="tel" name="tel" id="modal-tel">
+        </li>
+
+        <li class="form-modal-element">
+          <label class="form-modal-mail-label" for="modal-mail">Email</label>
+          <input class="form-modal-mail-input" type="email" name=" mail" id="modal-mail">
+        </li>
+
+        <li class="form-modal-element">
+          <label class="form-modal-feedback-label" for="modal-feedback">Comment</label>
+          <textarea class="form-modal-feedback-input" name="textarea" rows="6" placeholder="Text Input" id="modal-feedback"></textarea>
+        </li>
+      </ul>
+        <li class="form-modal-policy list">
+          <input class="form-modal-policy-checkbox" type="checkbox" name="policy" id="modal-policy">
+          <label class="form-modal-policy-label" for="modal-policy">I accept the terms and conditions of the<span>&nbsp</span>
+            <a href="" class="form-modal-policy-label-link">Privacy Policy</a>
+          </label>
+        </li>        
+        <div class="form-modal-button-div">
+          <button type="submit" class="form-modal-button">Send</button>
+        </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js">
