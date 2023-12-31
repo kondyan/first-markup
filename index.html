@@ -628,6 +628,17 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <div class="footer-mail">
+          <label class="footer-mail-label" for="footer-mail">Subscribe</label>
+          <input class="footer-mail-input" placeholder="E-mail" type="email" id="footer-mail" name="mail">
+        </div>
+        <div class="footer-form-button-div">
+        <button  type="submit"  class="footer-form-button">Subscribe</button>
+        </div>
+        </form>
+
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
@@ -644,20 +655,20 @@
         <h2 class="modal-text">Leave your contacts and we will call you back</h2>
 
         <form class="form-modal">
-<ul class="form-modal-list list">
+          <ul class="form-modal-list list">
           <li class="form-modal-element">
           <label class="form-modal-name-label for='modal-name">Name</label>
-        <input class="form-modal-name-input" type="text" name="name" id="modal-name">
+        <input class="form-modal-name-input" type="text" name="name" id="modal-name" required>
       </li>
 
       <li class="form-modal-element">
           <label class="form-modal-tel-label" for="modal-tel">Phone</label>
-          <input class="form-modal-tel-input" type="tel" name="tel" id="modal-tel">
+          <input class="form-modal-tel-input" type="tel" name="tel" id="modal-tel" required>
         </li>
 
         <li class="form-modal-element">
           <label class="form-modal-mail-label" for="modal-mail">Email</label>
-          <input class="form-modal-mail-input" type="email" name=" mail" id="modal-mail">
+          <input class="form-modal-mail-input" type="email" name=" mail" id="modal-mail" required>
         </li>
 
         <li class="form-modal-element">
@@ -666,7 +677,7 @@
         </li>
       </ul>
         <li class="form-modal-policy list">
-          <input class="form-modal-policy-checkbox" type="checkbox" name="policy" id="modal-policy">
+          <input class="form-modal-policy-checkbox" type="checkbox" name="policy" id="modal-policy" required>
           <label class="form-modal-policy-label" for="modal-policy">I accept the terms and conditions of the<span>&nbsp</span>
             <a href="" class="form-modal-policy-label-link">Privacy Policy</a>
           </label>

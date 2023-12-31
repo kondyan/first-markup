@@ -462,6 +462,10 @@ padding-bottom: 72px;
   margin-top: 17.5px;
 }
 
+.footer-left {
+  margin-right: 120px;
+}
+
 .footer {
   background-color: var(--color-navy-blue);
   padding-top: 100px;
@@ -475,7 +479,6 @@ padding-bottom: 72px;
 
 .footer .container {
   display: flex;
-  gap: 120px;
 }
 
 .footer .social-list-item-link:hover,
@@ -497,6 +500,105 @@ padding-bottom: 72px;
   gap: 16px;
 }
 
+/* FOOTER FORM */
+
+.footer-form {
+  display: inline-flex;
+}
+
+.footer-mail {
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 80px;
+  margin-right: 24px;
+}
+
+.footer-mail-label {
+  width: 75px;
+  height: 24px;
+
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.footer-mail-input {
+  
+  width: 264px; 
+  height: 40px; 
+  padding: 0;
+  padding-left: 16px;
+
+  background-color: var(--color-navy-blue);
+  color: var(--color-white);
+  border-radius: 4px; 
+  border: 1px solid var(--color-white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
+}
+
+.footer-mail-input::placeholder {
+  width: 36px;
+  height: 24px;
+
+  color: var(--color-white);
+  font-size: 12px;
+  letter-spacing: 0.48px; 
+  line-height: 2.0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+
+}
+
+.footer-form-button-div {
+  display: inline-flex ;
+  justify-content: center;
+  align-items: center;
+
+  /* NO IDEA HOW TO PLACE IT CORRECTLY WITHOUT USING MARGIN */
+  margin-top: 5px;
+}
+
+.footer-form-button {
+  display: inline-flex; 
+  gap: 16px;
+  text-align: center;
+  padding: 8px 24px;
+  width: 165px;
+
+
+  font-weight: 500;
+  line-height: 1.50;
+  letter-spacing: 0.64px;
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+  background-color: var(--color-ocean);
+}
+
+.footer-form-button::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('./img/telegram.svg#icon-telegram');
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+        
 /* portfolio elements */
 
 .portfolio-section {
@@ -749,7 +851,7 @@ padding-bottom: 72px;
   font-size: 16px;
 }
 
-/* FORMS */
+/* MODAL FORM */
 textarea {
   resize: none;
 }
