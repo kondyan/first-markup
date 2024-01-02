@@ -959,6 +959,7 @@ background-color: #404bbf ;
 
 .form-modal-policy-label {
   display: flex;
+  align-items: center;
 
   color: var(--color-light-slate);
 
