@@ -922,32 +922,50 @@ textarea {
 
 /* POLICY CHECKBOX */
 .form-modal-policy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  width: 354px;
+  width: 360px;
   height: 16px;
 }
 
 .form-modal-policy-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-modal-policy-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 16px;
   height: 16px;
+  margin-right: 8px;
 
+  border: 1px solid var(--color-navy-blue-modal);
+  border-radius: 2px;
+  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.form-modal-policy-svg {
+  width: 10px;
+  height: 8px;
+}
 
+.form-modal-policy-checkbox:checked + .form-modal-policy-icon {
+background-color: #404bbf ;
 }
 
 .form-modal-policy-label {
-  display: inline-flex;
-  width: 338px;
-  height: 100%;
-  padding-left: 8px;
+  display: flex;
 
   color: var(--color-light-slate);
 
   font-size: 12px; 
   letter-spacing: 0.48px;
+  line-height: 1.17;
+  user-select: none;
 }
 
 .form-modal-policy-label-link {

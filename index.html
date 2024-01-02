@@ -690,12 +690,19 @@
           <label class="form-modal-feedback-label" for="modal-feedback">Comment</label>
           <textarea class="form-modal-feedback-input" name="textarea" rows="6" placeholder="Text Input" id="modal-feedback"></textarea>
         </li>
-      </ul>
-        <li class="form-modal-policy list">
-          <input class="form-modal-policy-checkbox" type="checkbox" name="policy" id="modal-policy" required>
-          <label class="form-modal-policy-label" for="modal-policy">I accept the terms and conditions of the<span>&nbsp</span>
-            <a href="" class="form-modal-policy-label-link">Privacy Policy</a>
+    </ul>
+      <li class="form-modal-policy list">
+        
+          <label class="form-modal-policy-label" for="modal-policy">
+            <input class="form-modal-policy-checkbox" type="checkbox" name="policy" id="modal-policy" required>
+            <span class="form-modal-policy-icon">
+              <svg class="form-modal-policy-svg">
+              <use href="./img/icons.svg#icon-v"></use>
+            </svg>
+            </span>
+            <span>I accept the terms and conditions of the<span>&nbsp</span><a href="" class="form-modal-policy-label-link">Privacy Policy</a></span>
           </label>
+          
         </li>        
         <div class="form-modal-button-div">
           <button type="submit" class="form-modal-button">Send</button>
