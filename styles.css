@@ -928,9 +928,21 @@ textarea {
 }
 
 .form-modal-policy-checkbox {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-modal-policy-icon {
@@ -949,6 +961,7 @@ textarea {
 }
 
 .form-modal-policy-svg {
+  --color1: var(--color-dairy);
   width: 10px;
   height: 8px;
 }
