@@ -1534,7 +1534,8 @@ textarea {
 
 .burger-menu-nav-tel {
   color: var(--color-iris);
-  letter-spacing: 0.47px;
+  letter-spacing: 0;
+  font-size: 30px;
   text-transform: capitalize;
 }
 
@@ -1553,7 +1554,7 @@ textarea {
 
   padding-top: 80px;
   padding-left: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
   padding-right: 35px;
 }
 
