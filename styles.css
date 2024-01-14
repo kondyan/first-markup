@@ -1474,7 +1474,7 @@ textarea {
 
 .burger-menu {
   position: fixed;
-  top: -100vh;
+  top: -150vh;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -1484,7 +1484,7 @@ textarea {
 }
 
 .burger-menu.is-open {
-  transform: translateY(100vh);
+  transform: translateY(150vh);
 }
 
 .burger-menu .active {
@@ -1539,7 +1539,7 @@ textarea {
   text-transform: capitalize;
 }
 
-.burger-menu-nav-mail {
+.burger-menu-nav-mail > a {
   color: var(--color-slate);
 }
 
