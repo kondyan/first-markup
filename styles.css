@@ -79,6 +79,10 @@ body {
   text-decoration: none;
 }
 
+.link:active {
+  color: inherit;
+}
+
 /* container */
 .container {
   width: 100%;
@@ -1216,7 +1220,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 0;
 
   position: absolute;
   top: 24px;
@@ -1224,6 +1227,7 @@ body {
 
   width: 24px;
   height: 24px;
+  padding: 0;
 
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1479,6 +1483,10 @@ textarea {
   background-color: var(--color-white);
 }
 
+.burger-menu.is-open {
+  transform: translateY(100vh);
+}
+
 .burger-menu .active {
   color: var(--color-ocean);
 }
@@ -1503,10 +1511,6 @@ textarea {
 .modal-button:focus {
   background-color: var(--color-ocean);
   fill: var(--color-white);
-}
-
-.is-open {
-  transform: translateY(100vh);
 }
 
 .burger-menu .social-list-item-svg {
