@@ -1216,6 +1216,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 0;
 
   position: absolute;
   top: 24px;
